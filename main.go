@@ -1,6 +1,8 @@
 package main
 
-import "utils/folder"
+import (
+	"utils/monitor"
+)
 
 // go run main.go add --id 2 --title 无敌风火轮 --auther 佚名
 // go run main.go get --all true
@@ -30,5 +32,6 @@ func main() {
 	// #4 删除 book id
 	// book.GetBook(addCmd, *id, *all)
 
-	folder.Register()
+	// folder.Register()
+	monitor.Listen()
 }
